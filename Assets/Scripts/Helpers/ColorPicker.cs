@@ -40,6 +40,8 @@ public class ColorPicker : MonoBehaviour
 
     public void SelectColor(Color color)
     {
+        MainManager.Instance.SaveColor();
+
         for (int i = 0; i < AvailableColors.Length; ++i)
         {
             if (AvailableColors[i] == color)
