@@ -7,7 +7,7 @@ public class MainManager : MonoBehaviour
 {
  
 
-    public static MainManager Instance;
+    public static MainManager Instance { get; private set; }
 
     public Color TeamColor;
 
